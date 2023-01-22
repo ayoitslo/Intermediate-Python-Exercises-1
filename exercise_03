@@ -1,0 +1,18 @@
+string_dict = {}
+
+input_text = input('Enter a string: ')
+
+def get_string_dict(input_text):
+    input_text = input_text.lower()
+    input_text = input_text.replace(' ', '')
+
+    for x in input_text:
+        if x in string_dict:
+            string_dict[x] += 1
+        else:
+            string_dict[x] = 1
+    return(string_dict)
+
+string_dict = get_string_dict(input_text)
+
+print(string_dict)
