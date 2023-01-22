@@ -1,0 +1,12 @@
+my_list = [1, 2, 3, 2, 1, 4]
+unique_list = []
+temp_list = []
+
+def get_unique_list(my_list):
+    for y in my_list:
+        if y not in temp_list:
+            temp_list.append(y)
+    return temp_list       
+
+unique_list = get_unique_list(my_list)
+print(unique_list)
