@@ -1,0 +1,13 @@
+i = 1
+total = 0
+
+while i <= 6:
+    num = input('Enter int #' + str(i) + ': ')
+
+    if num.isdigit():
+        total += int(num)
+        i += 1
+    else:
+        print('Invalid input. Please enter an int.')
+
+print('Your sum is ' + str(total))
